@@ -21,7 +21,10 @@ const WordList = () => {
         <>
             <div className="flex flex-wrap gap-2">
                 {wordList.map((word: string, index: number) => (
-                    <Card key={index} className="p-2 rounded-xl bg-slate-300">
+                    <Card 
+                        key={index} 
+                        radius="lg"
+                        className="bg-slate-300">
                         <CardBody>
                             {word}
                         </CardBody>
